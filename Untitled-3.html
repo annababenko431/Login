@@ -1,0 +1,26 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = prompt ('Фамилия?');
+        if (user == 'Ivanov'){
+            let i=3;
+            while (i!=0){
+            let Password = prompt ('Введите пароль, у вас есть '+ i +' попытки' );
+             if (Password == '2365'){
+                alert ("Правильно!");
+                break;}
+                 else{
+                 alert ("Неправильный пароль");
+                i--;
+                }
+            }
+        }else {
+            alert ('Пользователь не найден');
+        }
+    </script>
+</body>
+</html>
